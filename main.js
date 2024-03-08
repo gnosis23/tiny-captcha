@@ -5,8 +5,8 @@ const svgCaptcha = require('svg-captcha')
 const { v4: uuidv4 } = require('uuid')
 
 // environment
-const port = process.env.PORT || 3000
-const secretKey = process.env.SECRET_KEY
+const port = 3000
+const secretKey = process.env.JWT_SECRET_KEY
 
 const app = express()
 const keyMap = {}

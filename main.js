@@ -25,22 +25,22 @@ app.get('/api/captcha/get', (req, res) => {
 	try {
 		checkAuth(req.headers['authorization'])
 	} catch (err) {
-		res.status(401).send(err.message)
+		res.status(401).json({ code: 1, message: err.message })
 		return
 	}
 
-	res.send('get /api/captcha/get success!')
+	res.send({ code: 0, message: 'success', data: { key: 123 } })
 })
 
 app.post('/api/captcha/check', (req, res) => {
 	try {
 		checkAuth(req.headers['authorization'])
 	} catch (err) {
-		res.status(401).send(err.message)
+		res.status(401).json({ code: 1, message: err.message })
 		return
 	}
 
-	res.send('/api/captcha/check')
+	res.send({ code: 0, message: 'success', data: true })
 })
 
 app.listen(port, () => {

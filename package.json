@@ -1,0 +1,24 @@
+{
+  "name": "tiny-captcha",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gnosis23/tiny-captcha.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gnosis23/tiny-captcha/issues"
+  },
+  "homepage": "https://github.com/gnosis23/tiny-captcha#readme",
+  "dependencies": {
+    "express": "^4.18.3",
+    "jsonwebtoken": "^9.0.2"
+  }
+}
